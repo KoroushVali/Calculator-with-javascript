@@ -70,8 +70,8 @@ function operate(number1,operator,number2){
     else if (operator == "/") {
         output = divide(number1, number2);
     }
-    if (output.toString().length > 15){
-        output = output.toPrecision(15)
+    if (output.toString().length > 24){
+        output = output.toPrecision(24)
     }
     calculatorOutput.textContent = output
     firstNumber = output.toString();
